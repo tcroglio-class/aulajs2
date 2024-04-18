@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando com JS pt2</title>
+    <style>
+        main {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Validador 2</h1>
+    </main>
+
+    <script>
+        let livros = [
+            {
+                titulo: 'diario de anne frank',
+                autor: 'anne frank',
+                ano: 1900,
+                emprestado: false,
+                categoria: ['fantasia', 'drama'],
+                revisoes: {
+                    comentario: 'Este é um comnetário',
+                    avaliacao: 1
+                }
+            },
+
+            {
+                titulo: 'enviesados',
+                autor: 'ryan alguma coisa',
+                ano: 2023,
+                emprestado: true,
+                categoria: ['técnico', 'conteudo tecnico'],
+                revisoes: {
+                    comentario: 'Este é um comnetário',
+                    avaliacao: 5
+                }
+            },
+
+            {
+                titulo: 'ursinho pooh',
+                autor: 'o próprio urso pooh',
+                ano: 1000,
+                emprestado: false,
+                categoria: ['fantasia', 'drama do pooh'],
+                revisoes: {
+                    comentario: 'Este é um comnetário',
+                    avaliacao: 1
+                }
+            }
+        ]
+
+        if (livros[0].emprestado) {
+            var emprestadoStr = "Sim";
+        } else {
+            var emprestadoStr = "Não";
+        }
+
+        if (livros[1].emprestado) {
+            var emprestadoStr = "Sim";
+        } else {
+            var emprestadoStr = "Não";
+        }
+
+        if (livros[2].emprestado) {
+            var emprestadoStr = "Sim";
+        } else {
+            var emprestadoStr = "Não";
+        }
+
+        console.log('\n\nATENÇÃO!!!!! \n\nAS VARIÁVEIS BOOLEAN ESTÃO COMO SIM E NÃO POR CONTA DE UM IF QUE ADICIONEI ANTES DO CONSOLE.LOG\n\n\n\n\n\n')
+
+        console.log(`LIVRO 1 \n\nTÍTULO: ${livros[0].titulo} \nAUTOR: ${livros[0].autor} \nANO: ${livros[0].ano} \nEMPRESTADO? ${emprestadoStr} \nCATEGORIA: ${livros[0].categoria[0]} \nAVALIAÇÃO: ${livros[0].revisoes.avaliacao}`);
+
+        console.log(`LIVRO 2 \n\nTÍTULO: ${livros[1].titulo} \nAUTOR: ${livros[1].autor} \nANO: ${livros[1].ano} \nEMPRESTADO? ${emprestadoStr} \nCATEGORIA: ${livros[1].categoria[0]} \nAVALIAÇÃO: ${livros[1].revisoes.avaliacao}`);
+
+        console.log(`LIVRO 3 \n\nTÍTULO: ${livros[2].titulo} \nAUTOR: ${livros[2].autor} \nANO: ${livros[2].ano} \nEMPRESTADO? ${emprestadoStr} \nCATEGORIA: ${livros[2].categoria[0]} \nAVALIAÇÃO: ${livros[2].revisoes.avaliacao}`);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de desconto</title>
+    <style>
+        main {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1> Calculadora de desconto </h1>
+        <p>Insira o valor que você deseja calcular aqui</p>
+        <input id="campoDesconto" type="text" placeholder="Valor do produto">
+        <input id="campoPercentual" type="text" placeholder="Porcentagem do desconto">
+        <button onclick="aplicaDesconto()">Calcular</button>
+
+        <p style="margin-top: 80px;">Valor com desconto:</p>
+        <input id="resultado" type="text">
+    </main>
+
+    <script>
+        function aplicaDesconto() {
+            let preco = document.getElementById('campoDesconto').value;
+            let porcentagem = document.getElementById('campoPercentual').value;
+
+            let precoFinal = preco - ((preco * porcentagem) / 100);
+
+            document.getElementById('resultado').value = `R$ ${precoFinal}`;
+        }
+    </script>
+</body>
+
+</html>

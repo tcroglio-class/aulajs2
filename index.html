@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando com JS</title>
+    <style>
+        main {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Validador 1</h1>
+    </main>
+
+    <script>
+        let idade = 17.9;
+        let nome = 'Tiago';
+        let altura = 1.7;
+
+        if (idade > 18) {
+            console.log(` Olá, ${nome}! Seu acesso foi permitido!`);
+        } else {
+            console.log(` Olá, ${nome}! Seu acesso foi negado!`);
+        }
+
+        altura+= 0.05;
+
+        console.log(altura);
+    </script>
+
+</body>
+
+</html>
